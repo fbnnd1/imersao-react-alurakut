@@ -17,6 +17,11 @@ Projeto de plataforma baseado na rede social Orkut desenvolvido durante a imers�
 [ ] Aula 04;  
 [ ] Aula 05;  
 
+### Desafios Aula 01
+
+- [X] Pegar os dados da API do GitHub e listar seus seguidores.
+- [X] Adicionar quão confiável, legal e sexy você é.
+
 ## Leiaute (Layout)
 
 Figma do projeto

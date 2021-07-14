@@ -1,3 +1,5 @@
+import {useState} from 'react';
+
 import MainGrid from '../src/components/MainGrid';
 import Box from '../src/components/Box';
 import { AlurakutMenu, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons';
@@ -12,15 +14,10 @@ function ProfileSidebar(propriedades) {
   )
 }
 
-/*
-const Box = styled.div`
-  background: #FFFFFF;
-  border-radius: 8px;
-`;
-*/
-
 export default function Home() {
-  const usuarioAleatorio = 'omariosouto';
+  const [seguidores, setSeguidores] = useState([]);
+
+  const usuarioAleatorio = 'fbnnd1';
   const pessoasFavoritas = [
     'juunegreiros',
     'omariosouto',
@@ -28,7 +25,25 @@ export default function Home() {
     'rafaballerini',
     'marcobrunodev',
     'felipefialho'
-  ]
+  ];
+
+  async function getFollowers() {
+    const response = await fetch(`https://api.github.com/users/${usuarioAleatorio}/followers`);
+    const followersGithub = await response.json();
+
+    if (!followersGithub) {
+      return;
+    }
+
+    const followers = followersGithub.map(({login}) => {
+      return login;
+    });
+
+    setSeguidores(followers);
+
+  }
+
+  getFollowers();
 
   return (
     <>
@@ -41,14 +56,31 @@ export default function Home() {
         <div className="welcomeArea" style={{ gridArea: 'welcomeArea' }}>
           <Box>
             <h1 className="title">
-              Bem vindo(a) 
+              Bem vindo(a)
             </h1>
 
-            <OrkutNostalgicIconSet />
+            <OrkutNostalgicIconSet sexy={1} legal={2} confiavel={3} />
           </Box>
         </div>
         <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
           <ProfileRelationsBoxWrapper>
+            <h2 className="smallTitle">
+                Meus Seguidores ({seguidores.length})
+            </h2>
+
+            <ul>
+              {seguidores.map((itemAtual) => {
+                return (
+                  <li key={itemAtual}>
+                    <a href={`/users/${itemAtual}`} key={itemAtual}>
+                      <img src={`https://github.com/${itemAtual}.png`} />
+                      <span>{itemAtual}</span>
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+
             <h2 className="smallTitle">
               Pessoas da comunidade ({pessoasFavoritas.length})
             </h2>
