@@ -27,7 +27,8 @@ export default function Home() {
   const [comunidades, setComunidades] = React.useState([{
     id: '12802378123789378912789789123896123', 
     title: 'Eu odeio acordar cedo',
-    image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg'
+    image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg',
+    url: 'https://alura.com.br',
   }]);
   // const comunidades = comunidades[0];
   // const alteradorDeComunidades/setComunidades = comunidades[1];
@@ -41,7 +42,9 @@ export default function Home() {
     'rafaballerini',
     'marcobrunodev',
     'felipefialho'
-  ]
+  ];
+
+  const [capaComunidade, setCapaComunidade] = React.useState("");
 
   return (
     <>
@@ -73,6 +76,7 @@ export default function Home() {
                   id: new Date().toISOString(),
                   title: dadosDoForm.get('title'),
                   image: dadosDoForm.get('image'),
+                  url: dadosDoForm.get('url'),
                 }
                 const comunidadesAtualizadas = [...comunidades, comunidade];
                 setComunidades(comunidadesAtualizadas)
@@ -87,9 +91,22 @@ export default function Home() {
               </div>
               <div>
                 <input
-                  placeholder="Coloque uma URL para usarmos de capa"
+                  placeholder="Coloque uma URL de uma imagem para usarmos de capa"
                   name="image"
-                  aria-label="Coloque uma URL para usarmos de capa"
+                  aria-label="Coloque uma URL de uma imagem para usarmos de capa"
+                  onChange={function handleChangeImage(e) {
+                    setCapaComunidade(e.target.value);
+                  }}
+                />
+                {capaComunidade != "" && (
+                  <img src={capaComunidade} alt="Capa nova comunidade" className="capaPreview" />
+                )}
+              </div>
+              <div>
+                <input
+                  placeholder="Coloque uma URL da comunidade"
+                  name="url"
+                  aria-label="Coloque uma URL da comunidade"
                 />
               </div>
 
@@ -109,7 +126,7 @@ export default function Home() {
               {comunidades.map((itemAtual) => {
                 return (
                   <li key={itemAtual.id}>
-                    <a href={`/users/${itemAtual.title}`}>
+                    <a href={itemAtual.url} target="_blank">
                       <img src={itemAtual.image} />
                       <span>{itemAtual.title}</span>
                     </a>

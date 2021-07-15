@@ -17,6 +17,17 @@ Projeto de plataforma baseado na rede social Orkut desenvolvido durante a imers√
 - [ ] Aula 04;  
 - [ ] Aula 05;  
 
+### Desafios
+
+
+- [X] Facilitar o cadastro da url da imagem;
+- [X] Adicionar links para as suas comunidades.
+<!--
+- [ ] Criar suas comunidades para compartilhar com a gente;
+- [ ] Adicionar o seu projeto na nossa vitrine;
+- [ ] Deixar o seu read me do projeto bonit√£o.
+-->
+
 ## Leiaute (Layout)
 
 Figma do projeto

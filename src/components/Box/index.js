@@ -35,6 +35,13 @@ const Box = styled.div`
     border-color: transparent;
     border-bottom-color: #ECF2FA;
   }
+  .capaPreview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
   input {
     width: 95%; /*100%;*/
     background-color: #F4F4F4;
