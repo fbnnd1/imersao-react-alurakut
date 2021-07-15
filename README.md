@@ -11,11 +11,11 @@ Projeto de plataforma baseado na rede social Orkut desenvolvido durante a imers�
 
 ## Sprints
 
-[X] Aula 01;  
-[ ] Aula 02;  
-[ ] Aula 03;  
-[ ] Aula 04;  
-[ ] Aula 05;  
+- [X] Aula 01;  
+- [X] Aula 02;  
+- [ ] Aula 03;  
+- [ ] Aula 04;  
+- [ ] Aula 05;  
 
 ## Leiaute (Layout)
 
@@ -43,3 +43,8 @@ Sinceros agradecimentos a toda a comunidade de "devs" que participou do projeto,
 - Mario Souto - Centralizar conteúdo na tela: https://www.youtube.com/watch?v=Cu-HP-gvggg  
 - CSS Grid Garden: https://cssgridgarden.com/  
 - Rafaella Ballerini - Como usar git e github na prática: https://www.youtube.com/watch?v=UBAX-13g8OM  
+
+### Aula 02
+
+- Mario Souto - Github Pro + Eslint: https://www.youtube.com/watch?v=yMRSDdifGW8&t=2s  
+- Mario Souto - Criando Flappy Bird com JavaScript: https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej  
