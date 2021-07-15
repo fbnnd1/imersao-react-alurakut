@@ -11,7 +11,11 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: sans-serif;
-    background-color: #D9E6F6;
+    background-color: #000000; /*#D9E6F6;*/
+    background-image: url('https://www.alura.com.br/assets/img/dev-em-t/diving-bg-dev-em-t-formato-1440-px.1616501197.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   #__next {
     display: flex;
