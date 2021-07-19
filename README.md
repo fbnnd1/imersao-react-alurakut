@@ -13,7 +13,7 @@ Projeto de plataforma baseado na rede social Orkut desenvolvido durante a imers√
 
 - [X] Aula 01;  
 - [X] Aula 02;  
-- [ ] Aula 03;  
+- [X] Aula 03;  
 - [ ] Aula 04;  
 - [ ] Aula 05;  
 
