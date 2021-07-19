@@ -15,7 +15,7 @@ Projeto de plataforma baseado na rede social Orkut desenvolvido durante a imers�
 - [X] Aula 02;  
 - [X] Aula 03;  
 - [X] Aula 04;  
-- [ ] Aula 05;  
+- [X] Aula 05;  
 
 ## Leiaute (Layout)
 
@@ -48,3 +48,37 @@ Sinceros agradecimentos a toda a comunidade de "devs" que participou do projeto,
 
 - Mario Souto - Github Pro + Eslint: https://www.youtube.com/watch?v=yMRSDdifGW8&t=2s  
 - Mario Souto - Criando Flappy Bird com JavaScript: https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej  
+
+### Aula 03
+
+- O que é Wordpress (Canal da Alura no Youtube) - https://www.youtube.com/watch?v=aiZSAn_2SJc&t  
+-Mario Souto - O que é um CMS - https://www.youtube.com/watch?v=IZi6nogysRM  
+
+### Aula 04
+
+- DatoCMS - https://www.datocms.com/  
+- GraphQl - https://graphql.org/  
+
+#### Citações
+
+- Ju Negreiros - Hello World com GraphQL - https://www.youtube.com/watch?v=RLP9MixVZvw&t  
+- Como fazer ajax - https://medium.com/@omariosouto/entendendo-como-fazer-ajax-com-a-fetchapi-977ff20da3c6  
+- Mario Souto - O que é um CMS? - https://www.youtube.com/watch?v=IZi6nogysRM&t  
+- Mario Souto - Variáveis de ambiente e segurança - https://www.youtube.com/watch?v=BP2KQtCyzo8  
+
+### Aula 05
+
+- DatoCMS - https://www.datocms.com/  
+- JWT - https://jwt.io/  
+- Nookies - https://www.npmjs.com/package/nookies  
+- Informações sobre como usar o nosso BFF - https://gist.github.com/juunegreiros/de40391093fe1f43ec2bb0777ecfa7f4  
+
+#### Citações
+
+- Mario Souto - Rotas Next - https://www.youtube.com/watch?v=x5Hs8kXlktM&t  
+- Mario Souto - Cookies e LocalStorage - https://www.youtube.com/watch?v=zSl_n-9yGRs  
+- Mario Souto - SEO, Performance e Segurança no Front End - https://www.youtube.com/watch?v=76eEzmx3irs  
+- Post - Como funciona import e export do Javascript - https://www.alura.com.br/artigos/como-funciona-o-import-e-export-do-javascript  
+- React Router DOM - https://reactrouter.com/web/guides/quick-start  
+- Postman - https://www.postman.com/  
+- Ju Negreiros - Destructuring - https://www.youtube.com/watch?v=f8a-qwKC5yk&t  
